@@ -261,6 +261,7 @@ var FALSECASTLING = [3][2]bool{
 var NEWGAME State
 
 func init() { //initialize module pseudoconstants
+	allposinit()
 	boardinit()
 	NEWGAME = State{&BOARDFORNEWGAME, DEFMOATSSTATE, White, DEFCASTLING, DEFENPASSANT, HalfmoveClock(0), FullmoveNumber(1), DEFPLAYERSALIVE}
 }
